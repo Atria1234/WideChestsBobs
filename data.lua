@@ -11,9 +11,8 @@ MergingChests.create_mergeable_chest(
     MergingChests.steel_chest_segments
 )
 
-MergingChests.set_next_upgrade_of('container', 'wooden-chest', 'iron-chest')
-MergingChests.set_next_upgrade_of('container', 'iron-chest', 'steel-chest')
 MergingChests.set_next_upgrade_of('container', 'steel-chest', 'brass-chest')
+MergingChests.set_next_upgrade_of('container', 'brass-chest', 'titanium-chest')
 
 if MergingChests.is_mod_active('WideChestsLogistic') then
     MergingChests.create_mergeable_chest(
@@ -96,4 +95,10 @@ if MergingChests.is_mod_active('WideChestsLogistic') then
     MergingChests.set_next_upgrade_of('logistic-container', 'logistic-chest-storage', 'logistic-chest-storage-2')
     MergingChests.set_next_upgrade_of('logistic-container', 'logistic-chest-buffer', 'logistic-chest-buffer-2')
     MergingChests.set_next_upgrade_of('logistic-container', 'logistic-chest-requester', 'logistic-chest-requester-2')
+
+    MergingChests.set_next_upgrade_of('logistic-container', 'logistic-chest-passive-provider-2', 'logistic-chest-passive-provider-3')
+    MergingChests.set_next_upgrade_of('logistic-container', 'logistic-chest-active-provider-2', 'logistic-chest-active-provider-3')
+    MergingChests.set_next_upgrade_of('logistic-container', 'logistic-chest-storage-2', 'logistic-chest-storage-3')
+    MergingChests.set_next_upgrade_of('logistic-container', 'logistic-chest-buffer-2', 'logistic-chest-buffer-3')
+    MergingChests.set_next_upgrade_of('logistic-container', 'logistic-chest-requester-2', 'logistic-chest-requester-3')
 end
